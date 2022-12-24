@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1a70c12-b2c7-4511-8ca9-df93a3657741" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <updated>1671870898294</updated>
       <workItem from="1671870899734" duration="765000" />
       <workItem from="1671871672297" duration="5517000" />
-      <workItem from="1671882350048" duration="1563000" />
+      <workItem from="1671882350048" duration="2705000" />
     </task>
     <task id="LOCAL-00001" summary="created HTTP server">
       <created>1671876269673</created>
@@ -96,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671876269673</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setting mysql">
+      <created>1671884239804</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671884239804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created HTTP server" />
-    <option name="LAST_COMMIT_MESSAGE" value="created HTTP server" />
+    <MESSAGE value="setting mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting mysql" />
   </component>
   <component name="VgoProject">
     <environment>
@@ -124,17 +131,6 @@
       </map>
     </environment>
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
