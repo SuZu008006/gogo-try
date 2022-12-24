@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a70c12-b2c7-4511-8ca9-df93a3657741" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/layout.html" afterDir="false" />
+    <list default="true" id="b1a70c12-b2c7-4511-8ca9-df93a3657741" name="Changes" comment="added template layout.html">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +87,7 @@
       <updated>1671870898294</updated>
       <workItem from="1671870899734" duration="765000" />
       <workItem from="1671871672297" duration="5517000" />
-      <workItem from="1671882350048" duration="2705000" />
+      <workItem from="1671882350048" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="created HTTP server">
       <created>1671876269673</created>
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671884239804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added template layout.html">
+      <created>1671885138205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671885138205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created HTTP server" />
     <MESSAGE value="setting mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting mysql" />
+    <MESSAGE value="added template layout.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="added template layout.html" />
   </component>
   <component name="VgoProject">
     <environment>
