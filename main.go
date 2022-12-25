@@ -25,9 +25,14 @@ type Person struct {
 	Name string `uri:"name" binding:"required"`
 }
 
+func setupGetAlbumsRouter(r *gin.Engine) *gin.Engine {
+	r.GET("/albums", GetAlbums)
+	return r
+}
+
 func main() {
 	r := gin.Default()
-	r.GET("/albums", GetAlbums)
+	setupGetAlbumsRouter(r)
 	r.GET("/albums/:id", getAlbumByID)
 	r.POST("/albums", postAlbums)
 
