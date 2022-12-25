@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"time"
 
 	"github.com/gin-gonic/gin"
 )
@@ -21,6 +22,11 @@ var albums = []album{
 	{ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaughan", Price: 39.99},
 }
 
+type Person struct {
+	ID   string `uri:"id" binding:"required,uuid"`
+	Name string `uri:"name" binding:"required"`
+}
+
 func main() {
 	r := gin.Default()
 	r.GET("/albums", GetAlbums)
@@ -29,7 +35,46 @@ func main() {
 
 	r.GET("/someDataFromReader", GetGopherPhoto)
 
-	r.Run()
+	r.GET("/:name/:id", GetPerson)
+
+	r.GET("/moreJSON", GetMsg)
+
+	s := &http.Server{
+		Addr:           "localhost:8080",
+		Handler:        r,
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
+		MaxHeaderBytes: 1 << 20,
+	}
+	s.ListenAndServe()
+	//r.Run()
+}
+
+func GetMsg(c *gin.Context) {
+	var msg struct {
+		Name    string `json:"user"`
+		Message string
+		Number  int
+	}
+	msg.Name = "Lena"
+	msg.Message = "hey"
+	msg.Number = 123
+	c.JSON(http.StatusOK, msg)
+}
+
+func GetPerson(c *gin.Context) {
+	var person Person
+	if err := c.ShouldBindUri(&person); err != nil {
+		c.JSON(400, gin.H{"msg": err})
+		return
+	}
+	c.JSON(
+		200,
+		gin.H{
+			"name": person.Name,
+			"uuid": person.ID,
+		},
+	)
 }
 
 func GetGopherPhoto(c *gin.Context) {
